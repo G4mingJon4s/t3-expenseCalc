@@ -1,0 +1,2 @@
+- as a user I should be able to add monthly payments
+- as a user I should be able to inspect my monthly payments

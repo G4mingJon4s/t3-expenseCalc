@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	margin: 0;
+	@apply bg-gray-200;
+	@apply text-negative;
+	@apply text-2xl;
+}
+
+* {
+	box-sizing: border-box;
+}
