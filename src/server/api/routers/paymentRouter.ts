@@ -8,6 +8,8 @@ export const paymentRouter = createTRPCRouter({
 			total: z.number(),
 			type: z.string(),
 			date: z.string().datetime(),
+			symbol: z.string(),
+			name: z.string(),
 		}))
 		.mutation(async ({ input, ctx }) => {
 			const payment = await ctx.prisma.payment.create({
