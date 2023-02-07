@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
 
 	return (
 		<>
-			<a href="/payments">Payments</a><br/>
-			<a href="/create/payment">Create a new payment</a>
+			<Link href="/payments">Payments</Link><br/>
+			<Link href="/create/payment">Create payment</Link>
 		</>
 	);
 }
