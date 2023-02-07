@@ -12,3 +12,20 @@ body {
 * {
 	box-sizing: border-box;
 }
+
+@layer base {
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number'] {
+		-webkit-appearance: none;
+		-moz-appearance: textfield !important;
+		appearance: none;
+	}
+}
+
+@layer components {
+	.clickable {
+		@apply hover:bg-gray-100;
+		@apply disabled:bg-gray-100;
+	}
+}
