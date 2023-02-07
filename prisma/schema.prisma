@@ -57,7 +57,9 @@ model VerificationToken {
 
 model Payment {
   id     String @id @default(cuid())
+  name   String
   total  Float
   date   String
+  type   String
   symbol String
 }
